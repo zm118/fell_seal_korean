@@ -1,0 +1,459 @@
+[entry 0-0]
+[h1]Deployment Phase[/h1]
+
+Before any battle begins, you must place the characters you want to bring into combat on the glowing teal tiles and choose which direction they face. The maximum number of troops you can field is displayed in the top-left corner of the screen, and the controls for browsing through your troops are displayed in the lower-right corner of the screen. Once you are happy with the characters you have deployed, press the {button-battlestart} button to initiate combat.
+
+Some tips for deployment:
+[list] 
+[*]In general, it is advisable to position bulkier close-range fighters in front of fragile spellcasters and archer-type units.
+[*]During the deployment phase, take the time to study the battlefield and your enemies to help you decide which troops to bring along. You can also adjust the loadout of your characters in the {hint-equip-units} during this time to prepare for the unique challenges that each battle presents.
+[*]If a character sustained an {Injury} in a previous battle, they can only recover from it if they sit out a battle. If you deploy an Injured unit, they will not recover from it and risk sustaining even more Injuries. If you must deploy an Injured character, though, they can still recover from their {Injury} later if left to rest during a future battle (unless you have enabled the {difficulty-injurystyle-3} or {difficulty-injurystyle-4} {injury} options).
+[/list]
+
+
+[entry 0-1]
+[h1]Turn Order Queue[/h1]
+
+During battle, you can see when each unit will get their turn in the queue along the top of the screen. Additionally, whenever you hover the cursor over a character on the battlefield, their portrait in the queue will extend to highlight when their turn will arrive. Portraits with a blue border (usually facing right) are allies, while portraits with a red border (usually facing left) are enemies.
+
+Turn order is determined by a character's Speed ({spd}) stat. Characters with high {spd} will get their turns sooner and even act more frequently than slower characters. 
+
+
+[entry 0-2]
+[h1]Movement and Elevation[/h1]
+
+During a character's turn, they can move once, either before or after their action. The distance a character can move during combat is determined primarily by their {Movement} (<sprite name="icon-stats-move">) stat, viewable at the bottom of their information panel. The topography of the land may restrict a character's {Movement}, however. If there is a large elevation difference between tiles, then the unit's {Jump} (<sprite name="icon-stats-jump">) value determines whether they can traverse the obstacle. The elevation of any given tile can be viewed in the top-left corner of the screen during battle. {Movement} and {Jump} values are determined by the character's {Class} and can be increased with certain boot-type accessories.
+
+Some units have other special traits that allow them to enter areas inaccessible to others. If a unit has one of these traits, it will be indicated by an icon along the bottom of their information panel.
+[list]
+[*]Swimming (<sprite name="icon-stats-swim">) is a trait only available to certain {Classes} and {monsters}. {help-swim-desc} Characters that cannot swim should take care around water, lest they get shoved in and drown!
+[*]Flying, burrowing, and teleporting units are indicated with the (<sprite name="icon-stats-fly">) icon. {help-fly-desc} This trait is mostly limited to {monsters}, but rare accessories and {passive-traits} can give a {human} character this trait.
+[*]Hovering units are indicated with the (<sprite name="icon-stats-levitate">) icon. {help-float-desc} This trait is mostly limited to {monsters}, but rare accessories can give a {human} character this trait. If a unit can both hover and swim, hovering replaces swimming.
+[/list]
+
+
+[entry 0-3]
+[h1]Targeting[/h1]
+
+A character is allowed one {action} during their turn, either before or after they move. An {action} is usually either a {regular-attack} with the character's equipped weapon, or an active {Ability} the character has learned. Once an {action} is selected, the next step is to choose a target. 
+[list]
+[*]Positioning is important when choosing a target! {Regular-attacks}, as well as many {abilities}, will deal additional damage from the target's side, and even more from the back. ({Spell} damage is generally not affected by this flanking bonus).
+[*]The targets you are allowed to choose are limited by the weapon's or {Ability}'s range. Range is divided into two properties: how far away you can aim the {Ability} (Range), and how much height or "Vertical" value it has. The tiles that an action can reach will be highlighted after you select it.
+[*]After selecting a target and before confirming the action, the predicted outcome for damage and accuracy will be displayed. If an Ability targets multiple characters, you can browse through them all to see the effects on each target. If the prediction doesn't look favorable, consider switching actions or targets. Note that the predicted damage amount is static and does not have any randomization involved, with the exception of critical hits and certain rare Abilities. When an Ability says it will do a certain amount of damage, it accurately reflects the amount of damage it will deal if it hits.
+[*]Some {Abilities} can hit several adjacent tiles. Friendly fire is a real possibility with these actions, so check the predicted outcome carefully to make sure you aren't damaging your allies or healing your enemies!
+[*]Note that ranged attacks in {Fell-Seal} are not affected by "line of sight." If the target falls within the action's range, then they can be hit even if there are obstacles or other characters in the way.
+[/list]
+
+
+[entry 0-4]
+[h1]Items[/h1]
+
+{Items} in {Fell-Seal} work a bit differently than they do in many other games. Although {Items} have a limited amount of uses per battle, they automatically restock after every battle, so you should feel free to use them frequently without fear of running out. While you cannot purchase {items}, you can increase the number of per-battle uses, potency, and different types available via {crafting}.
+
+Your entire stock of {items} is accessible by all of your characters.
+
+General Item Usage Tips:
+[list]
+[*]{Items} are particularly useful early in the game before your healers have had a chance to get stronger, so don't neglect them if you're having trouble!
+[*]{Items} like {item-potions} and {item-remedys} can be used on adjacent characters, so they can really save someone's life if your dedicated healer is unable to help them in time.
+[*]{item-Rocks} and other thrown items are great for close-range fighters who can't yet manage to get in range of an enemy. These {items} also never miss, so they are extremely effective against targets with high Evasion ({eva}). Similarly, they ignore units' Defense ({def}) stat, so they're great against high-Defense targets, like {PEK-99-Title} {monsters}.
+[/list]
+
+
+[entry 0-5]
+[h1]Injuries / Falling in Battle[/h1]
+
+If a character's {HP} are reduced to 0, they will retreat from battle, and, under the default settings, they will receive an {Injury}.
+
+Each {Injury} a character currently has will reduce their stats, making them less effective in combat. In order to recover from an {Injury}, a character must stay out of combat. Resting for one battle heals one {Injury}. Note that {color=name}{hero}{color=base} is immune to {Injuries}, but a team-wide {AP} bonus is granted if she doesn't fall in battle.
+
+A character that has fallen to 0 {HP} can be revived during battle by using certain {items} and {Abilities}. Characters can be revived in any tile within the {item}'s or {Ability}'s range, regardless of the location on the battlefield where they fell. Be advised, though, that if a revived character falls again, they will receive an additional {Injury}.
+
+
+[entry 0-6]
+[h1]Interactive Objects[/h1]
+
+Some battlefields have objects that can be interacted with by using a special action. These objects are usually marked with glowing yellow tiles during the deployment phase, and can be highlighted again during battle by pressing the {button-details} button. Occasionally, interactive objects are hidden, so be on the lookout for secrets!
+
+Types of Interactive Objects:
+[list]
+[*][b]Treasures:[/b] To open a treasure chest, stand next to one and select the {command-open} action that appears in the character's list of commands. Treasures can only be obtained one time. Characters cannot open treasure chests while swimming.
+[*][b]Gathering Spots:[/b] To gather a {crafting} {resource}, stand next to a gathering point and select the {command-Gather} action that appears in the character's list of commands. {word-gathering} points replenish after every battle. Characters cannot gather while swimming.
+[*][b]Ladders / Stairs / Ropes:[/b] Some tiles can transport a character to a different area of the battlefield. The destination coordinates are specified when hovering the cursor over the yellow glowing tile. To use these, stand on the tile and select the {command-climb} action that appears in the character's list of commands. The {command-climb} action is only available if the character is able to stand in the destination tile.
+[*][b]Burrows / Water Spouts:[/b] These tiles transport a character to a different area of the battlefield without using up their action. The destination coordinates are specified when hovering the cursor over the yellow glowing tile. To use these, simply move on top of them while the destination is unoccupied.
+[*][b]Switches:[/b] To activate a switch, stand next to it and select the {command-activate} action that appears in the character's list of commands. Switches can have various effects on the battlefield, like revealing new areas.
+[/list]
+
+
+[entry 0-7]
+[h1]Loot[/h1]
+
+Loot can be obtained in a number of ways. The type of loot you obtain is dependent on the battlefield in question, not the types of enemies you fight. So, battle maps that are further into the story will generally provide more advanced loot.
+[list]
+[*]Enemies sometimes drop loot when they are defeated.
+[*]Loot may be obtained after battle, in the Victory screen. Note that story encounters sometimes provide special one-time rewards.
+[*]There are {Abilities} that allow you to steal loot from enemies. Stolen loot has a chance to be more advanced than normal. 
+[*]There are {Abilities} that allow you to collect a trophy from a target, and if you succeed in defeating them this way, you are guaranteed to receive loot. Loot collected in this way has a chance to be more advanced than normal.
+[/list]
+
+
+[entry 0-8]
+[h1]Gaining AP[/h1]
+
+{AP}, or Ability Points, are a currency used for learning abilities. It is awarded to all characters after every battle, with those who participated receiving much more than those who did not. {AP} is awarded as follows: 
+[list]
+[*]Characters who participated in battle gain a lot of AP for their primary {Class}.
+[*]A small amount of bonus {AP} is awarded to each participant if {color=name}{hero}{color=base}'s {HP} never fall to 0 (only available during Story encounters).
+[*]All characters, including those who did not participate in battle, receive a small {battle-r-vicarious} bonus from "observing" their allies in combat and learning from them. Vicarious {AP} is earned even for classes the character has not unlocked yet.
+[*]There is a unique monster character that does not benefit from Vicarious {AP} like other characters do. Instead, once he has unlocked a {class}, he gets bonus {AP} when he participates in battle against {monsters} that are associated with that {class}.
+[*]Sometimes, one character earns the title of "MVP" based on their performance. This character receives a substantial {AP} bonus for the battle.
+[*]Some areas have "Guest" characters who are on the player's side for a single {wm-command-training}. A small {AP} bonus will be awarded if they survive the fight.
+[*]Story battles award significantly more {AP} than Patrols. 
+[*]{AP} amounts awarded are affected by your party's level relative to the enemy's. If your party is significantly higher in level than the enemies they fight, the amount of {AP} they earn after battle will be reduced.
+[/list]
+
+
+[entry 1-0]
+[h1]Character Information Panel[/h1]
+
+A character's information panel shows a wealth of information about their combat capabilities, telling you everything you need to know about them. It is usually visible in the bottom-left corner of the screen when the cursor is over a character.
+
+The information panel has up to five pages of information. The {patchstring1-term} can be used to flip through the pages. Here is a brief description of each page:
+[list]
+[*]Page 1 is the most important, showing the character's vital statistics and elemental resistances. Explanations of these can be viewed with the {button-help} button.
+[*]Page 2 shows the character's equipment and debuff immunities. You can view descriptions of each piece of gear, and most importantly the weapon's range, by using the {patchstring2-term}.
+[*]Page 3 shows the active {Abilities} from the character's primary {Class}. Like page 2, you can use the {patchstring2-term} to browse the {Abilities} and get more information about them. 
+[*]Page 4 is the same as page 3, except it shows the active {Abilities} from the character's {Subclass}. (This page only appears if the character has a {Subclass} equipped).
+[*]Page 5 shows the character's {passive-traits} and {counter} {Ability}. Like pages 3 and 4, you can use the {patchstring2-term} to see more information about these {Abilities}.
+[/list]
+
+
+[entry 1-1]
+[h1]Class and Subclass[/h1]
+
+A character's {Class} and {Subclass} are listed on their information panel, underneath their name on page 1. This provides a rough at-a-glance idea of the kinds of active {Abilities} and equipment they might be using. However, for more precise information on {Abilities} and equipment, it is always better to look at pages 2-5 of the character's information panel. 
+
+You can assign your characters' {Classes} and {Subclasses}, and see more information about the {Abilities} of each {Class}, in the {hint-wm-menu}.
+
+
+[entry 1-2]
+[h1]Experience and Leveling Up[/h1]
+
+Experience, or {EXP}, is awarded to a character every time they perform an action that has a noticeable effect. When a character reaches 100 {EXP}, they gain a level, receiving a boost to their stats based on their primary {Class}. When a level is gained, the {EXP} counter resets to 0.
+
+Some examples of actions that award {EXP} are:
+[list]
+[*]Damaging an enemy
+[*]Defeating an enemy 
+[*]Successfully casting a buff or debuff
+[*]Healing a character
+[*]Removing a debuff
+[/list]
+
+{EXP} is not awarded for interacting with an object, missing an attack, performing a useless action that has no noticeable effect, or walking.
+
+Special notes on {EXP}:
+[list]
+[*]Getting the finishing blow on an enemy awards significantly more {EXP} than normal.
+[*]To compensate for this, healing {Abilities} grant extra {EXP} in comparison to offensive actions, since healers will not often get finishing blows. 
+[*]A character's level relative to their target makes a difference in the amount of {EXP} awarded. When a lower-level character attacks a higher-level one, they receive more {EXP} relative to the level gap. The reverse is true as well: attacking a low-level enemy with a high-level character will not yield as much {EXP}.
+[/list]
+
+
+[entry 1-3]
+[h1]Statistics[/h1]
+Statistics, or stats, reflect a character's overall power in different areas.
+[list]
+[*]{HP}: Health Points represent the character's overall health. When {HP} reaches 0 in combat, the character will be knocked out and suffer an {injury} after combat ends, under most difficulty settings.
+[*]{MP}: Mana Points are a resource characters need to use to use certain {abilities} in combat. Characters will have 0 {mp} at the start of a battle and gain {mprecovery} {MP} at the start of every turn. {mp} is usually required to use the strongest {abilities} in the game.
+[*]{ATK}: {help-stats-0-desc}
+[*]{MND}: {help-stats-2-desc}
+[*]{DEF}: {help-stats-1-desc}
+[*]{RES}: {help-stats-3-desc}
+[*]{SPD}: {help-stats-4-desc}
+[*]{EVA}: {help-stats-5-desc}
+[*]<sprite name="icon-stats-crit">: {help-critical-desc}
+[/list]
+
+
+[entry 1-4]
+[h1]Character Condition[/h1]
+
+Some equipment and {Abilities} can alter a character's condition. You can check a character's current buffs and debuffs in the top-right corner of their information panel. During battle, you can also hold down the {button-details} button to quickly see the condition of all combatants. If a buff/debuff icon has a number, it refers to the turns remaining before the condition wears off. Icons without a number are permanent, usually obtained from equipment or from passive {Abilities}.
+
+Status conditions affect the target in the following ways:
+[b]Buffs:[/b]
+[list]
+[*]<sprite name="icon-buff-atkup">{positive-ATKUp}: {help-posstatus-ATKUp-desc}
+[*]<sprite name="icon-buff-matkup">{positive-MNDUp}: {help-posstatus-MNDUp-desc}
+[*]<sprite name="icon-buff-defup">{positive-DEFUp}: {help-posstatus-DEFUp-desc}
+[*]<sprite name="icon-buff-mdefup">{positive-RESUp}: {help-posstatus-RESUp-desc}
+[*]<sprite name="icon-buff-critup">{positive-CRITUp}: {help-posstatus-CRITUp-desc}
+[*]<sprite name="icon-buff-thorns">{positive-Thorns}: {help-posstatus-Thorns-desc}
+[*]<sprite name="icon-buff-haste">{positive-Haste}: {help-posstatus-Haste-desc}
+[*]<sprite name="icon-buff-regen">{positive-Renew}: {help-posstatus-Renew-desc}
+[*]<sprite name="icon-buff-reraise">{positive-Rebirth}: {help-posstatus-Rebirth-desc}
+[*]<sprite name="icon-buff-mirage">{positive-Mirage}: {help-posstatus-Mirage-desc}
+[*]<sprite name="icon-buff-barrier">{positive-Barrier}: {help-posstatus-Barrier-desc}
+[*]<sprite name="icon-buff-aegiswater"><sprite name="icon-buff-aegisfire"><sprite name="icon-buff-aegisearth"><sprite name="icon-buff-aegiselectric"><sprite name="icon-buff-aegisdark"><sprite name="icon-buff-aegisholy">{positive-AdaptAegis}: {help-posstatus-AdaptAegis-desc}
+[*]<sprite name="icon-buff-fleetoffoot">{positive-fleetoffoot}: {help-posstatus-fleetoffoot-desc}
+[*]<sprite name="icon-buff-affinitywater"><sprite name="icon-buff-affinityfire"><sprite name="icon-buff-affinityearth"><sprite name="icon-buff-affinityelectric"><sprite name="icon-buff-affinitydark"><sprite name="icon-buff-affinityholy">[b]{DRUI-C1}[/b]: A unit with [b]{DRUI-C1}[/b] will deal increased damage with the last element they received damage from.
+[*]<sprite name="icon-buff-focus">{positive-focus}: {help-posstatus-focus-desc}
+[*]<sprite name="icon-buff-boon">{positive-boon}: {help-posstatus-boon-desc}
+[/list]
+
+[b]Debuffs:[/b]
+[list]
+[*]<sprite name="icon-debuff-poison">{help-status-0-0}: {help-status-0-0-desc}
+[*]<sprite name="icon-debuff-bleed">{help-status-0-1}: {help-status-0-1-desc}
+[*]<sprite name="icon-debuff-blind">{help-status-0-2}: {help-status-0-2-desc}
+[*]<sprite name="icon-debuff-root">{help-status-0-3}: {help-status-0-3-desc}
+[*]<sprite name="icon-debuff-silence">{help-status-0-4}: {help-status-0-4-desc}
+[*]<sprite name="icon-debuff-cripple">{help-status-1-0}: {help-status-1-0-desc}
+[*]<sprite name="icon-debuff-sleep">{help-status-1-1}: {help-status-1-1-desc}
+[*]<sprite name="icon-debuff-berserk">{help-status-1-2}: {help-status-1-2-desc}
+[*]<sprite name="icon-debuff-charm">{help-status-1-3}: {help-status-1-3-desc}
+[*]<sprite name="icon-debuff-slow">{help-status-1-4}: {help-status-1-4-desc}
+[*]<sprite name="icon-debuff-atkdown">{help-status-2-0}: {help-status-2-0-desc}
+[*]<sprite name="icon-debuff-matkdown">{help-status-2-1}: {help-status-2-1-desc}
+[*]<sprite name="icon-debuff-defdown">{help-status-2-2}: {help-status-2-2-desc}
+[*]<sprite name="icon-debuff-mdefdown">{help-status-2-3}: {help-status-2-3-desc}
+[*]<sprite name="icon-debuff-weaken">{help-status-2-4}: {help-status-2-4-desc}
+[*]<sprite name="icon-debuff-noquicken">{negative-exhaust}: {help-status-exhaust-desc}
+[/list]
+
+
+[entry 1-5]
+[h1]Resistances[/h1]
+
+A character has two types of resistances: elemental resistances and debuff resistances.
+[list]
+[*]Elemental resistances are shown on page 1 of the character's information panel. The elements are {element-water-icon}{element-Water}, {element-fire-icon}{element-Fire}, {element-earth-icon}{element-Earth}, {element-thunder-icon}{element-Thunder}, {element-dark-icon}{element-Dark}, and {element-holy-icon}{element-Holy}. The numbers shown next to each icon are percentages: a character with 50 resistance will take 50% less damage from the element, while -50 resistance results in taking 50% more damage. Resistances above 100 actually result in being healed from the element!
+[*]Debuff immunities are shown on page 2 of the character's information panel. These are all-or-nothing: if an icon is highlighted, the character is totally immune to it, and if an icon is not highlighted, the character can be afflicted by the debuff like normal. 
+[/list]
+
+
+[entry 2-0]
+[h1]What is the Troops Menu?[/h1]
+
+The {hint-wm-menu} is the most important tool you have for making your characters stronger. In this interface, you can make changes to your characters' {Classes}, learn new {Abilities}, equip powerful gear, craft new items, and adjust the difficulty level of the game. The {hint-wm-menu} is accessible both through the world map and during the deployment phase before battle. Select a character to bring up a list of options.
+
+
+[entry 2-1]
+[h1]Equipment[/h1]
+
+This area of the Troops Menu allows you to equip your characters with as many as 6 pieces of gear, such as weapons, armor pieces, and accessories.
+[list]
+[*]Keep in mind it is not always the best choice to equip the weapon with the highest attack power or the armor with the highest defense -- equipment can have a number of special qualities that make them well-suited to different situations. For example, weapons with extra range can be especially potent despite their generally lower attack power.
+[*]The types of weapons and armor a character can use are restricted by their {Class}.
+[*]A character can equip one helmet and one set of body armor. In their hands, they can choose to hold a one-handed weapon (plus a shield if their {Class} is capable), or a two-handed weapon. Some {passive} {Abilities} will enable even more possibilities, such as the {Ability} to wield a two-handed weapon in one hand or the {Ability} to hold two weapons. Note that bows and crossbows require two hands to wield under all circumstances.
+[*]Accessories are equipped in a freeform manner and can fill in any of the 6 equipment slots the character has remaining, without any restrictions as to type or {Class}. This means, for example, that a character can equip as many boot- or glove-type accessories as they want.
+[/list]
+
+
+[entry 2-2]
+[h1]Abilities[/h1]
+
+The decisions you make about which {Abilities} each character learns are the single most important factor in making them unique. {Abilities} can be learned with the {AP} awarded from battles. When a character has earned enough {AP} to learn an {Ability}, you will see a small arrow (<sprite name="icon-ability-ready">) next to them in the {hint-wm-menu}. If the arrow is moving, it means the character can afford a new {Ability} since you last checked them.
+
+[b]Learning {Abilities}:[/b] To learn an {Ability}, select a character, select "Abilities," then select "Learn Abilities". A list of all the {Classes} the character can access appears, along with how many {AP} they have for each {Class}. If you select a {Class} from the list, you can view all of the {Abilities} in that {Class}'s unique Ability tree. The tree is split into "tiers," and later tiers only become accessible after the character has learned an {Ability} from the previous tier. 
+
+There are three types of {Abilities} that each {Class} can learn:
+[list]
+[*][b]Active {Abilities}[/b] (<sprite name="icon-ability-active">) are commands that can be selected during battle. Active {Abilities} can be {Skills}, {Spells}, or {Special}. {Skills} generally have their power increased by the {atk} stat and target the {def} stat, and can be disabled with the {negative-Cripple} debuff. {Spells} generally have their power increased by the {mnd} stat and target the {res} stat, and can be disabled with the {negative-Mute} debuff. Only a few active {Abilities} are Special, not falling under the usual umbrella of {Skills} and {Spells}.
+[*][b]Passive {Abilities}[/b] (<sprite name="icon-ability-passive">), when equipped, can automatically bolster the character in various ways. 
+[*][b]Counter {Abilities}[/b] (<sprite name="icon-ability-counter">), when equipped, automatically trigger in response to different situations during battle. 
+[/list]
+
+[b]Equipping Abilities:[/b] Once your characters have learned some Abilities from different Classes, you must equip them before you get any benefit from them. In a character's Abilities menu, select "Set Abilities."
+[list]
+[*][b]Active Abilities:[/b] A character automatically equips all of the active {Abilities} they have learned from their primary {Class}, and can additionally equip all the active {Abilities} they have learned from another {class} as their {Subclass}.
+[*][b]Passive Abilities:[/b] A character automatically equips all of the {passive} {Abilities} from their primary {Class} that they have learned, and can additionally equip any two other {passive} {Abilities} they have learned from other {Classes}.
+[*][b]Counter Abilities:[/b] A character can equip a single {counter} {Ability} that they have learned.
+[/list]
+
+
+[entry 2-3]
+[h1]Class Change[/h1]
+
+A character's {Class} influences which {Abilities} they possess, what kind of equipment they can use, how their earned {AP} can be spent, and how their stats increase when they level-up. You can change a character's primary {Class} and view some information about each {Class} by selecting a character in the {hint-wm-menu} and then selecting "Class Change."
+
+[b]Unlocking New Classes:[/b]
+Every time a character spends {AP} to learn an {Ability}, their {Class} level goes up by 1. Raising different {Class} levels will unlock new {Classes} for that character. These requirements can be viewed in the Class Change screen. As your party unlocks {Classes}, even more {Classes} become revealed in the Class Change screen.
+
+After you change a character's {Class}, it is a good idea to double-check their {Abilities} and equipment, since these are influenced by {Class}.
+
+
+[entry 2-4]
+[h1]Sorting Units[/h1]
+
+Use this option to change the order in which your characters are arranged in the {hint-wm-menu}. Many different sorting methods are available for you to choose from.
+
+
+[entry 2-5]
+[h1]Dismissing Units[/h1]
+
+If for any reason you wish to remove a character from your army, you can dismiss them in the {hint-wm-menu}. Once dismissed, the character is gone forever and cannot be retrieved, so use this command with caution. Story characters cannot be dismissed.
+
+
+[entry 2-6]
+[h1]Crafting[/h1]
+
+If you have the right {resources}, you can craft new items, equipment, gadgets, or badges, as well as improve the effectiveness of existing items. If you have everything required to craft something, a green checkmark will be visible next to the recipe. 
+
+Whenever you obtain a new {resource}, new recipes may become visible in the {Crafting} menu. It's a good idea to check this menu after receiving a new {resource}, to see if you've discovered anything new to craft.
+
+
+[entry 2-7]
+[h1]Difficulty Settings[/h1]
+
+If you wish to adjust the difficulty settings that you selected when you started a new game, you can do so in the {hint-wm-menu}. Press the {ps4-button-size-on}{button-difficulty}{ps4-button-size-off} button to bring up the difficulty options. You will not be able to change the difficulty settings from battle.
+
+
+[entry 3-0]
+[h1]Overview[/h1]
+
+From the world map, you can access the {hint-wm-menu}, as well as travel to different areas indicated by differently-colored nodes. The {hint-wm-menu} is described in its own section, so this section will focus on the rest of the world map's features. 
+
+New world map nodes become accessible as the story progresses.
+[list]
+[*]A red node indicates the next story destination. 
+[*]A green node is a battlefield. You can Patrol these to initiate optional battles.
+[*]A large blue node indicates a town, where you can hire troops and visit the shop. A select few towns can be Patrolled to initiate an optional battle as well.
+[*]A small blue node is a "neutral" node. These usually cannot be interacted with. 
+[/list]
+
+Nodes may also be marked with a <sprite name="speechbubble"> symbol.
+[list]
+[*]A <sprite name="speechbubble"> symbol means that optional dialogue can be triggered at that node, which gives insight into the characters' backstories and personalities.
+[/list]
+
+
+[entry 3-1]
+[h1]Hiring Teammates at the Guild[/h1]
+
+You can hire new teammates at the {Guild}, which is accessible on large blue town nodes.
+[list]
+[*]You can spend extra {GP} (gold pieces) to hire a character of a higher level. The maximum level you can hire is directly tied to {color=name}{hero}{color=base}'s level.
+[*]You can hire a character of any {Class} you have currently unlocked (except for a few special restricted {Classes}). This choice affects their stats, as they are considered to have been leveling as their {Class} since level 1. Also note that a character hired as an advanced {Class} may lose access to it if they later change {Class}. They would need to fulfill the normal requirements before they can change back again, so switch them out of their {Class} with caution.
+[*]Newly-hired characters start with some bonus {AP} for any {Classes} your team has been using.
+[*]When hiring a new character, you will be able to select their visual appearance, portrait, and name. {patchstring3-term}
+[/list]
+
+From the {guild}, you can also customize the appearance of existing characters (other than story-characters).
+
+
+[entry 3-2]
+[h1]Shops[/h1]
+
+On blue town nodes, you can shop for equipment. The equipment available is the same at each town, but all shops get upgrades at specific story points, so it is wise to check the inventory of every new town you encounter.
+[list]
+[*][b]Buy:[/b] Spend {GP} to make a purchase. You first choose a category, then a piece of gear, then the amount to buy.
+[*][b]Sell:[/b] You can sell any equipment that you no longer require in exchange for {GP}. As with buying, you choose the desired category, then the piece of gear, then the amount to sell.
+[*][b]Try & Buy:[/b] This is the most efficient way to purchase equipment for your characters, since it allows you to directly compare the new equipment with their current gear. Upgrades are shown on the character's information panel in blue, while negative effects are shown in red. As you try on more of the shop's offerings, you can keep track of your spending in the top-right corner of the screen. When you cancel out of the Try & Buy screen, you will be prompted to confirm your purchases.
+[/list]
+
+
+[entry 3-3]
+[h1]Patrolling to Initiate Optional Battles[/h1]
+
+On green battlefield nodes, and on a select few blue town nodes, you have the option to "Patrol" the area, triggering an optional battle. Each node has a different minimum and maximum level for the enemies encountered during a Patrol. This level range is displayed on the world map, and enemies will scale within this range to match your six strongest characters. 
+
+Revisiting a battlefield like this has several purposes:
+[list]
+[*]If you feel you need to train your characters before the next story encounter, Patrolling allows you to do so. 
+[*]Many treasure chests are out of reach the first time you visit a battlefield. When you later unlock the necessary equipment or {Abilities} to reach these treasures, you will need to revisit the area in order to obtain them. You can see which nodes still have unopened treasures on the world map.
+[*]At a certain point in the game, you may have reason to seek out specific types of monsters, and Patrolling is often the best way to find them.
+[/list]
+
+
+[entry 4-0]
+[h1]Party Composition[/h1]
+
+It is a good idea to have some variety in your party -- a diverse group of characters can cover for each other's weaknesses.
+[list]
+[*]Raise a combination of melee / ranged fighters, spellcasters, and healers. Most battles allow you to deploy 6 characters, so there is still plenty of room for experimentation with some of the quirkier types of units, too.
+[*]It is a good idea to hire a couple of backup teammates in case someone needs to rest for an {Injury}, a story character becomes temporarily unavailable for plot reasons, or a battle allows more than the usual number of deployed troops. 
+[/list]
+
+
+[entry 4-1]
+[h1]Look at the Troops Menu After Every Battle[/h1]
+
+After every battle, your characters gain AP and may have access to new items, so it is important to stay up-to-date in the Troops Menu.
+[list]
+[*]Spend your newly-earned {AP}. Learning the right {Ability} can give a character a great boost in power. 
+[*]If a character masters their primary {Class} (learns all of the {Class}'s Abilities), it might be wise to change them to another {Class} right away. Most of the {AP} they gain while in a mastered {Class} is wasted. 
+[*]If a character changes their {Class}, double-check their {Abilities} and equipment. Try to always have a {Subclass}, {passive} {Abilities}, and {counter} {Ability} selected, if you've learned them. And even though equipment is automatically "optimized" after a {Class} change, it may not be exactly what you want. For example, if a character changes their {Class} to a {rogu-title}, they can equip a dagger or a crossbow as their weapon. Daggers are often stronger than crossbows, so auto-optimization will favor a dagger. But you may prefer the extra range of a crossbow.
+[*]Update your characters' equipment. You might have found a new piece of gear in a treasure chest, after battle, or from a newly-accessible shop node on the world map.
+[*]Check your {crafting} menu. You often find new crafting {Components} during a story battle, so check to see if anything new can be created or upgraded.
+[/list]
+
+
+[entry 4-2]
+[h1]Waiting: Getting Your Turn Faster[/h1]
+
+If a character does not act during their turn (other than to move), their next turn will arrive slightly faster. This can be a useful technique in battle if the character cannot reach any enemies yet. However, if you are not performing an action, you are also not getting any {exp}, so the decision remains: is it better to get an edge in the turn order, or to take a suboptimal action purely to gain {EXP}? This depends on the situation and whether you prefer to have more of an advantage in the short term or in the long term.
+
+
+[entry 4-3]
+[h1]Don't Underestimate Buffs and Debuffs[/h1]
+
+Even if you are weaker than your opponent, utilizing buffs and debuffs can swing the odds in your favor. For example, you can {negative-Mute} or {negative-Berserk} a caster to completely neutralize them. You can {negative-Cripple} a physical fighter to make them less of a threat, and if they only have close-range weapons and {Abilities}, a well-placed {negative-Root} can do the same. And enemies with high {HP} are especially vulnerable to {negative-Poison} and {negative-Bleed} damage, since they deal % based damage.
+Of course, enemies can also use these strategies against you. To keep debuffs under control, use {positive-Barrier}, {panacea-spell}, or protective equipment, and upgrade your {item-Remedys} via crafting whenever possible.
+
+
+[entry 4-4]
+[h1]Shoving and Drowning Opponents[/h1]
+
+{Abilities} that shove the target, like the {Merc-title}'s {merc-a2}, are extremely useful to have on at least one character. They deal extra damage when they shove the target into walls, into other units, or off of high places. You can even drown opponents that are unable to swim by pushing them into water! Note that pushing off of high places deals varying damage not only depending on the distance fallen, but also on the target's {Jump} score and whether they can fly or not.
+
+
+[entry 4-5]
+[h1]Stuck on a Battle?[/h1]
+
+Here are some simple strategies that can have a big impact on the outcome of any battle:
+[list]
+[*]Bring the maximum number of troops into each battle! Most battles allow 6, but a few allow as many as 7.
+[*]Use items! Since they replenish after every battle, there's no reason to hoard them. 
+[*]Focus on bringing down one foe at a time! Reducing their numbers quickly might give you the edge you need to survive.
+[*]Exploit {monsters}' elemental weaknesses! Keep elemental spells and weapons on hand to take advantage of them. 
+[*]Study your enemies before battle! Their different weapons, {passives}, and {counters} may call for different tactics. You can tweak your characters in the {hint-wm-menu} during deployment to give yourself the best chance of success against different challenges. 
+[/list]
+
+
+[entry 4-6]
+[h1]Contextual Help[/h1]
+
+On most screens, you can {patchstring-click1-term} the {button-help} button to view explanations of some of the icons and other interface elements. The Help button is indicated in the lower-right corner of the screen, if it is currently available.
+
+
+[entry 5-0]
+[h1]Resetting to Level 1[/h1]
+
+[b]Overview[/b]
+At the {Guild}, you have the option to reset a character to level 1. This feature allows you to optimize a character's stats to your liking if you are so inclined. But it is by no means necessary to do so in order to complete the game, nor is it generally recommended. Use this feature with caution!
+
+[b]Why Reset to Level 1?[/b]
+Resetting to level 1 allows you to erase all stat growth the character has accumulated in their levels up to that point, while keeping their {AP}, {Abilities}, and unlocked {Classes} intact. 
+
+When a character levels up, they gain certain stats based on the primary {Class} that they have at the time. These stat growths are viewable in the Class Change screen. If you have very specific stats in mind for a character and feel that you've "messed up", or if you want to use stat growth from a {Class} the character unlocked later in their career, then resetting to level 1 is an option that allows you to build that perfect character.
+
+[b]Reasons NOT to Reset to Level 1[/b]
+[list]
+[*]Re-leveling a character can take a long time. If you reset to level 1, you may have to put your progress in the game on hold while that character gets back in fighting shape.
+[*]It costs a lot of gold. Spending that {GP} on equipment instead may give you the stat boost you're looking for.
+[*]It might be simpler to recruit a different character from the {Guild}. Recruiting is half the cost of resetting, and you don't have to spend time gaining levels for them to catch up with the rest of your team. The downside, though, is that a new recruit will typically have less overall AP than a character who has been with your team for awhile and actively participating in encounters. 
+[*]It's not necessary to have perfect stats to complete the game. {Fell-Seal} is designed in a way that allows you to experiment with your team. Even if a character gains a few levels in a {Class} that isn't "the perfect choice," it won't make them ineffective.
+[*]Stats stop growing when they reach the cap of {stat-cap} for most stats, {spd-cap} for {Spd} and {hp-cap} for {hp}/{mp}. This means that even if you're trying to min/max a character, there's still a fair amount of leeway to "max a stat" even if you don't level with the highest growth for that stat every level.
+[*]A specific example of the above would be leveling exclusively as a {prin-title} for their fast {Mnd} growth leading to a character with {stat-cap} {mnd} at around level 88. Any levels after that will have wasted {mnd} stat growth. This means that having some mixture of {Classes} for any given character is a good thing in the long run, to help round out their stats and make sure you're always getting something out of every level-up. At the same time, most classes won't reach the cap, and only at extremely high levels, so it is not a big concern.
+[/list]
+
+[b]Special Considerations for Resetting Story Characters[/b]
+[list]
+[*]New recruits at the {Guild} are only able to be hired up through {color=name}{hero}{color=base}'s level. Resetting {color=name}{hero}{color=base}'s level restricts what level recruits you can hire. 
+[*]Story characters who join your party are directly tied to {color=name}{hero}{color=base}'s level as well, so resetting her level will also lower the level of new story characters. 
+[*]Some story battles require certain story characters to be present. If you reset a story character's level and then enter a battle where they are mandatory, you may end up in an unpleasant situation. {color=name}{hero}{color=base} is usually required in story battles, although occasionally other story characters will be mandatory as well.
+[*]Since you can't hire a second version of a story character like you can with non-story characters, resetting their level can indeed be something you want to do if you feel you have really "messed up" their stat growth.
+[*]There is a unique monster character that has no permanent stat growth. Instead, their stats reflect their current monster {Class}. Therefore, this monster character will not see any benefit from resetting to level 1.
+[/list]
